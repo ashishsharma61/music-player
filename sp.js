@@ -14,7 +14,7 @@ let volumeSlider = document.getElementById("volumeSlider");
 
 async function getSongs(folder) {
     document.querySelector('.left').style.left = "0%";
-    let a = await fetch(`http://127.0.0.1:5500/music-player/songs/${folder}`);
+    let a = await fetch(`https://ashishsharma61.github.io/music-player/songs/${folder}`);
     let response = await a.text();
     let div = document.createElement("div");
     div.innerHTML = response;
