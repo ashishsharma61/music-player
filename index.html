@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="sp.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container flex bg-black">
+        <div class="left">
+            <div class="library bg-gray rounded m-1 p-1">
+                <li><img src="playlist.svg" alt="playlist" class="invert">Your&nbsp;Library
+                    <span class="close-btn">✖</span>
+                </li>
+                <div class="songList">
+                    <ul>
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="right bg-gray p-1 rounded">
+            <div class="playlist">
+                <h1 class="plus">Playlists</h1>
+                <div class="cardContainer">
+                    <div class="card rounded pointer" onclick="getSongs('AP_Dhillon')">
+                        <div class="play-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60">
+                                <!-- Forest Green Circle Background -->
+                                <circle cx="24" cy="24" r="20" fill="#32CD32" />
+                                <!-- Black Rounded Triangle (Play Button) -->
+                                <path d="M18 14 Q18 12, 20 13 L34 22 Q36 24, 34 26 L20 35 Q18 36, 18 34 Z"
+                                    fill="black" />
+                            </svg>
+                        </div>
+                        <img src="https://i.pinimg.com/474x/e9/f8/85/e9f8859be9e7c1d131c0a53d3604b077.jpg"
+                            alt="img-of-playlist" class="rounded">
+                        <h1 class="song-name">AP Dhillon</h1>
+                        <p class="song-discription" style="color: #b8b8b8;">A collection of all the top hits
+                            by AP Dhillon, featuring his signature blend of hip-hop and Punjabi beats.</p>
+                    </div>
+
+
+                    <div class="card rounded pointer" onclick="getSongs('Diljit_Dosanjh')">
+                        <div class="play-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60">
+                                <!-- Forest Green Circle Background -->
+                                <circle cx="24" cy="24" r="20" fill="#32CD32" />
+                                <!-- Black Rounded Triangle (Play Button) -->
+                                <path d="M18 14 Q18 12, 20 13 L34 22 Q36 24, 34 26 L20 35 Q18 36, 18 34 Z"
+                                    fill="black" />
+                            </svg>
+                        </div>
+                        <img src="https://st1.photogallery.ind.sh/wp-content/uploads/indiacom/dilijit-dosanjh-sets-the-coachella-valley-music-stage-on-fire-202304-1682245973.jpg"
+                            alt="img-of-playlist" class="rounded">
+                        <h1 class="song-name">Diljit Dosanjh</h1>
+                        <p class="song-discription" style="color: #b8b8b8;">A collection of all the top hits
+                            by Diljit Dosanjh, featuring his signature blend of hip-hop and Punjabi beats.</p>
+                    </div>
+
+
+                    <div class="card rounded pointer" onclick="getSongs('Garry_Sandhu')">
+                        <div class="play-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60">
+                                <!-- Forest Green Circle Background -->
+                                <circle cx="24" cy="24" r="20" fill="#32CD32" />
+                                <!-- Black Rounded Triangle (Play Button) -->
+                                <path d="M18 14 Q18 12, 20 13 L34 22 Q36 24, 34 26 L20 35 Q18 36, 18 34 Z"
+                                    fill="black" />
+                            </svg>
+                        </div>
+                        <img src="https://i.pinimg.com/736x/09/f8/e6/09f8e633d86216caaee1ed5ccfc6189c.jpg"
+                            alt="img-of-playlist" class="rounded">
+                        <h1 class="song-name">Garry Sandhu</h1>
+                        <p class="song-discription" style="color: #b8b8b8;">A collection of all the top hits
+                            by Garry Sandhu, featuring his signature blend of hip-hop and Punjabi beats.</p>
+                    </div>
+
+
+
+                    <div class="card rounded pointer" onclick="getSongs('Karan_Aujla')">
+                        <div class="play-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60">
+                                <!-- Forest Green Circle Background -->
+                                <circle cx="24" cy="24" r="20" fill="#32CD32" />
+                                <!-- Black Rounded Triangle (Play Button) -->
+                                <path d="M18 14 Q18 12, 20 13 L34 22 Q36 24, 34 26 L20 35 Q18 36, 18 34 Z"
+                                    fill="black" />
+                            </svg>
+                        </div>
+                        <img src="https://blog.delivermytune.com/wp-content/uploads/2024/12/ab6761610000e5eb7aa689cd7ca136098b26c20d.jpeg"
+                            alt="img-of-playlist" class="rounded">
+                        <h1 class="song-name">Karan Aujla</h1>
+                        <p class="song-discription" style="color: #b8b8b8;">A collection of all the top hits
+                            by Karan Aujla, featuring his signature blend of hip-hop and Punjabi beats.</p>
+                    </div>
+
+
+
+                    <div class="card rounded pointer" onclick="getSongs('Sidhu_Moosewala')">
+                        <div class="play-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60">
+                                <!-- Forest Green Circle Background -->
+                                <circle cx="24" cy="24" r="20" fill="#32CD32" />
+                                <!-- Black Rounded Triangle (Play Button) -->
+                                <path d="M18 14 Q18 12, 20 13 L34 22 Q36 24, 34 26 L20 35 Q18 36, 18 34 Z"
+                                    fill="black" />
+                            </svg>
+                        </div>
+                        <img src="https://images.news18.com/ibnlive/uploads/2022/05/sidhu-moose-wala-7.jpg"
+                            alt="img-of-playlist" class="rounded">
+                        <h1 class="song-name">Sidhu Moosewala</h1>
+                        <p class="song-discription" style="color: #b8b8b8;">A collection of all the top hits
+                            by Sidhu Moosewala, featuring his signature blend of hip-hop and Punjabi beats.</p>
+                    </div>
+
+
+
+                    <div class="card rounded pointer" onclick="getSongs('Other')">
+                        <div class="play-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60">
+                                <!-- Forest Green Circle Background -->
+                                <circle cx="24" cy="24" r="20" fill="#32CD32" />
+                                <!-- Black Rounded Triangle (Play Button) -->
+                                <path d="M18 14 Q18 12, 20 13 L34 22 Q36 24, 34 26 L20 35 Q18 36, 18 34 Z"
+                                    fill="black" />
+                            </svg>
+                        </div>
+                        <img src="https://mosaic.scdn.co/640/ab67616d00001e021d1cc2e40d533d7bcebf5daeab67616d00001e02c7a4e37ff51aca9709a2308cab67616d00001e02e62ca3548e739bd85eebbbc9ab67616d00001e02f33d72746e4e555f8403e5fe"
+                            alt="img-of-playlist" class="rounded">
+                        <h1 class="song-name">Hit Songs Playlist</h1>
+                        <p class="song-discription" style="color: #b8b8b8;">A collection of all the top hits, featuring
+                            his signature blend of hip-hop and Punjabi beats.</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="playbar invert">
+                <div class="box">
+                    <div class="songinfo">
+                    </div>
+                    <div class="songbuttons">
+                        <img id="previous" src="prev.svg">
+                        <img id="play" src="play.svg">
+                        <img id="next" src="next.svg">
+                    </div>
+                    <div class="volume invert">
+                        <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="1">
+                    </div>
+                    <div class="songtime">
+                    </div>
+                </div>
+                <div class="seekbar pointer">
+                    <div class="remaining pointer">
+                        <div class="circle pointer">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="sp.js"></script>
+
+</html>
